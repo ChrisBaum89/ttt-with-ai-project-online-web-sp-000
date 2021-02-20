@@ -15,7 +15,8 @@ module Players
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
           return "#{x[1]}"
         else
-          return rand(1..9)
+          position = rand(1..9)
+          binding.pry
         end
       end
 
