@@ -58,7 +58,7 @@ class Game
     while board.valid_move?(input) == false
       board.display
       puts "Player #{current_player.token}, what position would you like?"
-      input = current_player.move(@board)
+      input = current_player.move(@board).to_i
     end
     board.update(input, current_player)
     # if board.valid_move?(input)
