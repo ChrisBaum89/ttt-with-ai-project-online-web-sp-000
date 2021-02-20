@@ -53,8 +53,8 @@ class Game
   end
 
   def turn
-    #binding.pry
-    input = current_player.move(@board)
+    binding.pry
+    input = current_player.move(@board).to_i
     if board.valid_move?(input)
       board.update(input, current_player)
     else
