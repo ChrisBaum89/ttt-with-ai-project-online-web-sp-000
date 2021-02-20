@@ -63,6 +63,7 @@ class Game
 
   def play
     while (not over?)
+      board.display
       turn
     end
 
