@@ -18,7 +18,7 @@ module Players
         elsif board.cells[6] == " "
             7
         elsif board.cells[8] == " "
-            9 
+            9
         else
         end
       end
