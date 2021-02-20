@@ -70,7 +70,7 @@ class Game
       board.display
       puts "Player #{current_player.token}, what position would you like?"
       turn
-      
+
     end
 
     if won? && winner == "X"
