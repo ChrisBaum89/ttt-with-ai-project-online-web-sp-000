@@ -60,8 +60,7 @@ class Game
     else
       board.display
       puts "Invalid move. Please select another position."
-      #turn
-      play
+      turn
     end
   end
 
