@@ -12,7 +12,6 @@ module Players
       elsif num_of_empty < 8
         WIN_COMBINATIONS.each do |x|
           #Plays offense
-          binding.pry
           if board.cells[x[0]] == board.cells[x[1]] and board.cells[x[0]] != " "
             comp_position = board.cells[x[2]]
           elsif board.cells[x[1]] == board.cells[x[2]] and board.cells[x[1]] != " "
