@@ -22,18 +22,6 @@ module Players
         else
         end
       end
-
-
-      if board.cells[0] == " "
-        1
-      elsif board.cells[2] == " "
-        3
-      elsif board.cells[6] == " "
-        7
-      elsif board.cells[8] == " "
-        9
-      else
-      end
     end
   end
 end
