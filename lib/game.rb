@@ -72,8 +72,10 @@ class Game
     end
 
     if won? && winner == "X"
+      board.display
       puts "Congratulations X!"
     elsif won? && winner == "O"
+      board.display
       puts "Congratulations O!"
     elsif draw?
       puts "Cat's Game!"
