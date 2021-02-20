@@ -54,7 +54,7 @@ class Game
 
   def turn
     binding.pry
-    input = current_player.move(@board).to_i
+    input = current_player.move(@board.cells).to_i
     if board.valid_move?(input)
       board.update(input, current_player)
     else
