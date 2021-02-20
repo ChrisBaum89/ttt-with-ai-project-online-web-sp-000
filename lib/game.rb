@@ -57,6 +57,7 @@ class Game
     if board.valid_move?(input)
       board.update(input, current_player)
     else
+      board.display
       puts "Invalid move. Please select another position."
       turn
     end
