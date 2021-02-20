@@ -4,20 +4,22 @@ module Players
 
     def move(board)
       WIN_COMBINATIONS.each do |x|
-        pos_1_val = board.cells[x[0]]
-        pos_2_val = board.cells[x[1]]
-        pos_3_val = board.cells[x[2]]
-        binding.pry
-        if pos_1_val == pos_2_val && (pos_1_val == "X" || pos_1_val == "O")
-          return x[2]
-        elsif pos_2_val == pos_3_val && (pos_2_val == "X" || pos_2_val == "O")
-          return x[0]
-        elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
-          return x[1]
-        else
-          return rand(1..9)
-        end
+        puts "#{x}"
+        # pos_1_val = board.cells[x[0]]
+        # pos_2_val = board.cells[x[1]]
+        # pos_3_val = board.cells[x[2]]
+        # binding.pry
+        # if pos_1_val == pos_2_val && (pos_1_val == "X" || pos_1_val == "O")
+        #   return x[2]
+        # elsif pos_2_val == pos_3_val && (pos_2_val == "X" || pos_2_val == "O")
+        #   return x[0]
+        # elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
+        #   return x[1]
+        # else
+        #   return rand(1..9)
+        # end
       end
+      binding.pry
 
 
     # def move(board)
