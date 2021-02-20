@@ -54,7 +54,7 @@ class Game
 
   def turn
     #binding.pry
-    input = nil
+    input = 10
     while board.valid_move?(input) == false
       board.display
       puts "Player #{current_player.token}, what position would you like?"
