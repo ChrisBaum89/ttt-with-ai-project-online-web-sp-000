@@ -66,7 +66,7 @@ class Game
   def play
     while (not over?)
       board.display
-      puts "What position would you like?"
+      puts "Player #{current_player.token}, what position would you like?"
       turn
     end
 
