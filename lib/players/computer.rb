@@ -9,11 +9,11 @@ module Players
         pos_2_val = board.cells[x[1]]
         pos_3_val = board.cells[x[2]]
         if pos_1_val == pos_2_val && (pos_1_val == "X" || pos_1_val == "O")
-          @chosen = x[2] + 1
+          @chosen = x[2]
         elsif pos_2_val == pos_3_val && (pos_2_val == "X" || pos_2_val == "O")
-          @chosen = x[0] + 1
+          @chosen = x[0]
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
-          @chosen = x[1] + 1
+          @chosen = x[1]
         else
           new_array = [1, 2, 3, 4, 5 ,6, 7, 8, 9].shuffle
           @chosen = new_array[0]
