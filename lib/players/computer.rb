@@ -4,7 +4,7 @@ module Players
 
     def move(board)
       WIN_COMBINATIONS.each do |x|
-        binding.pry
+        #binding.pry
         if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
           x[2] + 1
         elsif (board.cells[x[1]] == board.cells[x[2]]) && (board.cells[x[1]] == "X" || board.cells[x[1]] == "O")
