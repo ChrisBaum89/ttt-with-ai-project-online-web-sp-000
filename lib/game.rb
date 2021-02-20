@@ -57,6 +57,7 @@ class Game
     input = nil
     while board.valid_move?(input)
       board.display
+      puts "Player #{current_player.token}, what position would you like?"
       input = current_player.move(@board).to_i
     end
     # if board.valid_move?(input)
@@ -70,8 +71,6 @@ class Game
 
   def play
     while (not over?)
-      board.display
-      puts "Player #{current_player.token}, what position would you like?"
       turn
     end
 
