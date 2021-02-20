@@ -20,7 +20,7 @@ module Players
           @chosen = new_array[0]
         end
       end
-      @chosen
+      @chosen.to_s
     # def move(board)
     #   rand(1..9)
     # end
