@@ -4,26 +4,7 @@ module Players
     attr_accessor :chosen_position
 
     def move(board)
-      WIN_COMBINATIONS.each do |x|
-        #binding.pry
-        if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
-          @chosen_position = "#{x[2] + 1}"
-        elsif (board.cells[x[1]] == board.cells[x[2]]) && (board.cells[x[1]] == "X" || board.cells[x[1]] == "O")
-          @chosen_position = "#{x[0] + 1}"
-        elsif (board.cells[x[0]] == board.cells[x[2]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
-          @chosen_position = "#{x[1] + 1}"
-        elsif board.cells[0] == " "
-          @chosen_position = "1"
-        elsif board.cells[2] == " "
-          @chosen_position = "3"
-        elsif board.cells[6] == " "
-          @chosen_position = "7"
-        elsif board.cells[8] == " "
-          @chosen_position = "9"
-        else
-        end
-      end
-      @chosen_position
+      rand(1..9)
     end
   end
 end
