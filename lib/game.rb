@@ -78,6 +78,7 @@ class Game
       board.display
       puts "Congratulations O!"
     elsif draw?
+      board.display
       puts "Cat's Game!"
     else
     end
