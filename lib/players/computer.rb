@@ -4,8 +4,9 @@ module Players
     attr_accessor :chosen_position
 
     def move(board)
-      binding.pry
-
+      WIN_COMBINATIONS.each do |x|
+        binding.pry
+      end
 
 
     # def move(board)
