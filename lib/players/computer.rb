@@ -19,7 +19,6 @@ module Players
           chosen = rand(1..9)
         end
         chosen
-        binding.pry
       end
 
 
