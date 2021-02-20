@@ -9,14 +9,13 @@ module Players
         pos_2_val = board.cells[x[1]]
         pos_3_val = board.cells[x[2]]
         if pos_1_val == pos_2_val && (pos_1_val == "X" || pos_1_val == "O")
-          return "#{x[2]}"
+          return x[2]
         elsif pos_2_val == pos_3_val && (pos_2_val == "X" || pos_2_val == "O")
-          return "#{x[0]}"
+          return x[0]
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
-          return "#{x[1]}"
+          return x[1]
         else
           position = rand(1..9)
-          binding.pry
         end
       end
 
