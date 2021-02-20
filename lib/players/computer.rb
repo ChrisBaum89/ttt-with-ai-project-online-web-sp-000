@@ -22,6 +22,7 @@ module Players
           @chosen_position = "9"
         else
         end
+        binding.pry
       end
     end
   end
