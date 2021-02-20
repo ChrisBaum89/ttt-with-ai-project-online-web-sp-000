@@ -15,7 +15,7 @@ module Players
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
           @chosen = x[1]
         else
-          empty_cells = board.cells.index_all(" ")
+          empty_cells = board.cells.index{|x| x == " "}
           binding.pry
           # new_array = [1, 2, 3, 4, 5 ,6, 7, 8, 9].shuffle
           # @chosen = new_array[0]
