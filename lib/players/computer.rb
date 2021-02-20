@@ -4,7 +4,9 @@ module Players
 
     def move(board)
       binding.pry
-      
+      if board.cells[0] == " "
+        1
+      end
     end
   end
 end
