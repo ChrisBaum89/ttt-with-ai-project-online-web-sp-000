@@ -4,7 +4,12 @@ module Players
     attr_accessor :chosen_position
 
     def move(board)
-      rand(1..9)
-    end
+      binding.pry
+
+
+
+    # def move(board)
+    #   rand(1..9)
+    # end
   end
 end
