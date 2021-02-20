@@ -14,6 +14,8 @@ module Players
           "#{x[0]}"
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
           "#{x[1]}"
+        else
+          rand(1..9)
         end
       end
 
