@@ -8,6 +8,7 @@ module Players
         if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
           x[2]
         end
+      end
 
 
       if board.cells[0] == " "
