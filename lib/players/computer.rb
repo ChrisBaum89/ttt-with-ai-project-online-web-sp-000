@@ -18,9 +18,8 @@ module Players
         else
           chosen = rand(1..9)
         end
-        chosen
       end
-
+      chosen
 
     # def move(board)
     #   rand(1..9)
