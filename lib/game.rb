@@ -60,7 +60,8 @@ class Game
     else
       board.display
       puts "Invalid move. Please select another position."
-      turn
+      #turn
+      play
     end
   end
 
@@ -69,6 +70,7 @@ class Game
       board.display
       puts "Player #{current_player.token}, what position would you like?"
       turn
+      
     end
 
     if won? && winner == "X"
