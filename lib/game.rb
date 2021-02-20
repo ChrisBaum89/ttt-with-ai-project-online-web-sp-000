@@ -57,6 +57,7 @@ class Game
     if board.valid_move?(input)
       board.update(input, current_player)
     else
+      puts "Invalid move. Please select another position."
       turn
     end
   end
@@ -64,6 +65,7 @@ class Game
   def play
     while (not over?)
       board.display
+      puts "What position would you like?"
       turn
     end
 
