@@ -9,7 +9,7 @@ module Players
           board.cells[x[]]
       end
 
-      
+
       if board.cells[0] == " "
         1
       elsif board.cells[2] == " "
