@@ -5,7 +5,9 @@ module Players
 
     def move(board)
       WIN_COMBINATIONS.each do |x|
-        postion_1 = board.cells[x[0]]
+        pos_1_val = board.cells[x[0]]
+        pos_2_val = board.cells[x[0]]
+        pos_3_val = board.cells[x[0]]
         binding.pry
       end
 
