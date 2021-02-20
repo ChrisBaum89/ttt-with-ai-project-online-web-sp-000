@@ -14,7 +14,7 @@ module Players
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
           @chosen = x[1]
         else
-          @chosen = rand(1..9)
+          @chosen = Array.new(1..9)
         end
       end
       @chosen
