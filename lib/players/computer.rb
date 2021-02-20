@@ -3,7 +3,13 @@ module Players
     WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2]]
 
     def move(board)
-      binding.pry
+      WIN_COMBINATIONS.each do |x|
+        binding.pry
+        if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
+          board.cells[x[]]
+      end
+
+      
       if board.cells[0] == " "
         1
       elsif board.cells[2] == " "
