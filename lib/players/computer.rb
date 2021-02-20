@@ -14,7 +14,8 @@ module Players
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
           @chosen = x[1]
         else
-          @chosen = Array.new(1..9)
+          new_array = [1, 2, 3, 4, 5 ,6, 7, 8, 9].shuffle
+          @chosen = new_array[0]
         end
       end
       @chosen
