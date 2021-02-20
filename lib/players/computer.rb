@@ -10,14 +10,15 @@ module Players
         pos_3_val = board.cells[x[2]]
 
         if pos_1_val == pos_2_val && (pos_1_val == "X" || pos_1_val == "O")
-          x[2]
+          chosen = x[2]
         elsif pos_2_val == pos_3_val && (pos_2_val == "X" || pos_2_val == "O")
-          x[0]
+          chosen = x[0]
         elsif pos_1_val == pos_3_val && (pos_1_val == "X" || pos_1_val == "O")
-          x[1]
+          chosen = x[1]
         else
-          rand(1..9)
+          chosen = rand(1..9)
         end
+        chosen
       end
 
 
