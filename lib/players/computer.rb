@@ -7,6 +7,7 @@ module Players
       WIN_COMBINATIONS.each do |x|
         #binding.pry
         if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
+          binding.pry
           @chosen_position = "#{x[2] + 1}"
         elsif (board.cells[x[1]] == board.cells[x[2]]) && (board.cells[x[1]] == "X" || board.cells[x[1]] == "O")
           @chosen_position = "#{x[0] + 1}"
