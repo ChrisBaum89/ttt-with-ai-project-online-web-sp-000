@@ -6,8 +6,8 @@ module Players
       WIN_COMBINATIONS.each do |x|
         binding.pry
         if (board.cells[x[0]] == board.cells[x[1]]) && (board.cells[x[0]] == "X" || board.cells[x[0]] == "O")
-          board.cells[x[]]
-      end
+          x[2]
+        end
 
 
       if board.cells[0] == " "
